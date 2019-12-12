@@ -1,0 +1,14 @@
+<script>
+    var n = prompt();
+
+    if (n <= 9 && n >= 0) {
+        alert(n)
+    } else {
+
+        var last_number = n % 10;
+        var first_number = n.charAt(0)
+        var substr = n.substring(1, n.length - 1);
+        var result = last_number + substr + first_number
+        alert(result)
+    }
+</script>

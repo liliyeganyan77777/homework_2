@@ -1,0 +1,28 @@
+<script>
+    // 1
+    var a = 367;
+    var b = (a % 10);
+    console.log(b); //7
+    var c = (a - b) / 10;
+    console.log(c);
+    var num = (b + String(c));
+    if (b == 0) {
+        console.log(a)
+    } else if (c > 0) {
+        console.log(num)
+    } else {
+        console.log(num)
+    }
+
+    // 2
+
+    var num = "367";
+    var last_number = num % 10
+    if (num % 10 == 0) {
+        console.log(num)
+    } else {
+        var substr = num.substring(0, num.length - 1);
+        var result = last_number + substr
+        console.log(result)
+    }
+</script>

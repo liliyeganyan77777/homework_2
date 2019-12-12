@@ -1,0 +1,24 @@
+<script>
+    var a = 5;
+    var b = -13;
+    var c = 6;
+    var root1;
+    var root2;
+
+    var discriminant = b * b - 4 * a * c;
+
+    if (discriminant > 0 && a == 0 || c == 0) {
+
+        alert('enter valid constans');
+    } else if (discriminant > 0) {
+        root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+        root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+        console.log(root1, root2)
+    } else if (discriminant == 0) {
+        root1 = root2 = -b / (2 * a);
+        console.log(root1)
+
+    } else {
+        alert('solution does not exists');
+    }
+</script>
